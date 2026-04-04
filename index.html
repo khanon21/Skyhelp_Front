@@ -155,7 +155,7 @@
                         <div class="contenido-caracteristica">
                             <h3>Gestión de Tickets</h3>
                             <p>Crea, asigna y da seguimiento a incidencias de manera eficiente</p>
-                            <div class="enlace-caracteristica">
+                            <div class="enlace-caracteristica" onclick="aplicacion.mostrarDetalleCaracteristica('tickets')">
                                 <span>Conocer más</span>
                                 <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </div>
@@ -172,7 +172,7 @@
                         <div class="contenido-caracteristica">
                             <h3>Múltiples Roles</h3>
                             <p>Sistema diseñado para clientes, técnicos, administradores y domiciliarios</p>
-                            <div class="enlace-caracteristica">
+                            <div class="enlace-caracteristica" onclick="aplicacion.mostrarDetalleCaracteristica('roles')">
                                 <span>Conocer más</span>
                                 <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </div>
@@ -189,7 +189,7 @@
                         <div class="contenido-caracteristica">
                             <h3>Gestión de Domiciliarios</h3>
                             <p>Coordina recogidas y entregas de equipos de forma optimizada</p>
-                            <div class="enlace-caracteristica">
+                            <div class="enlace-caracteristica" onclick="aplicacion.mostrarDetalleCaracteristica('domiciliarios')">
                                 <span>Conocer más</span>
                                 <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </div>
@@ -206,7 +206,7 @@
                         <div class="contenido-caracteristica">
                             <h3>Reportes Detallados</h3>
                             <p>Estadísticas completas sobre tiempos de respuesta y satisfacción</p>
-                            <div class="enlace-caracteristica">
+                            <div class="enlace-caracteristica" onclick="aplicacion.mostrarDetalleCaracteristica('reportes')">
                                 <span>Conocer más</span>
                                 <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </div>
@@ -223,7 +223,7 @@
                         <div class="contenido-caracteristica">
                             <h3>Notificaciones en Tiempo Real</h3>
                             <p>Mantente informado con alertas instantáneas de actualizaciones</p>
-                            <div class="enlace-caracteristica">
+                            <div class="enlace-caracteristica" onclick="aplicacion.mostrarDetalleCaracteristica('notificaciones')">
                                 <span>Conocer más</span>
                                 <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </div>
@@ -240,7 +240,7 @@
                         <div class="contenido-caracteristica">
                             <h3>Centro de Conocimiento</h3>
                             <p>Base de datos completa con artículos de ayuda y FAQ</p>
-                            <div class="enlace-caracteristica">
+                            <div class="enlace-caracteristica" onclick="aplicacion.mostrarDetalleCaracteristica('conocimiento')">
                                 <span>Conocer más</span>
                                 <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </div>
@@ -532,10 +532,19 @@
         </main>
     </div>
 
-<<<<<<< HEAD
+  <!-- Modal Overlay -->
+  <div id="contenedor-modal" class="modal-overlay oculto" onclick="aplicacion.cerrarModalAlFondo(event)">
+      <div class="modal" id="modal-principal">
+          <!-- Contenido dinámico -->
+      </div>
+  </div>
+
+  <!-- Toast de Notificación -->
+  <div id="toast-notificacion" class="toast oculto">
+      <span id="toast-mensaje"></span>
+  </div>
+
   <script type="text/javascript" src="js/script.js"></script>
 
-=======
->>>>>>> ca973b1f50799f288ad06efb2adb54a1f16a8e69
 </body>
 </html>
